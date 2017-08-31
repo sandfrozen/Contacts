@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Contact {
+class Contact: NSObject {
     
     let name: String
     
