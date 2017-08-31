@@ -15,6 +15,7 @@
 		E9227B371F5858E4008FFE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9227B351F5858E4008FFE2C /* LaunchScreen.storyboard */; };
 		E9227B401F585C44008FFE2C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9227B3F1F585C44008FFE2C /* Contact.swift */; };
 		E9227B421F585EB3008FFE2C /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9227B411F585EB3008FFE2C /* NewContactViewController.swift */; };
+		E9227B451F5870D5008FFE2C /* DefaultImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E9227B441F5870D5008FFE2C /* DefaultImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		E9227B3E1F585C44008FFE2C /* Contacts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contacts-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9227B3F1F585C44008FFE2C /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		E9227B411F585EB3008FFE2C /* NewContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
+		E9227B431F5870D5008FFE2C /* DefaultImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultImage.h; sourceTree = "<group>"; };
+		E9227B441F5870D5008FFE2C /* DefaultImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				E9227B2D1F5858E4008FFE2C /* ContactsViewController.h */,
 				E9227B411F585EB3008FFE2C /* NewContactViewController.swift */,
 				E9227B3F1F585C44008FFE2C /* Contact.swift */,
+				E9227B431F5870D5008FFE2C /* DefaultImage.h */,
+				E9227B441F5870D5008FFE2C /* DefaultImage.m */,
 				E9227B2E1F5858E4008FFE2C /* ContactsViewController.m */,
 				E9227B301F5858E4008FFE2C /* Main.storyboard */,
 				E9227B331F5858E4008FFE2C /* Assets.xcassets */,
@@ -165,6 +170,7 @@
 				E9227B2F1F5858E4008FFE2C /* ContactsViewController.m in Sources */,
 				E9227B2C1F5858E4008FFE2C /* AppDelegate.m in Sources */,
 				E9227B291F5858E4008FFE2C /* main.m in Sources */,
+				E9227B451F5870D5008FFE2C /* DefaultImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

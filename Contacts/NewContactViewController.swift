@@ -12,10 +12,11 @@ class NewContactViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
+    @IBOutlet weak var contactImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        contactImageView.image = DefaultImage.generate(of: contactImageView.frame.size);
         // Do any additional setup after loading the view.
     }
 
