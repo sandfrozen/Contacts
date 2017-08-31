@@ -21,10 +21,10 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        NSArray *contactArray = @[@"Jan Kowalski",
-                                  @"Paweł Skaslki"];
+        Contact *c1 = [[Contact alloc] initWithContactName: @"Jan Kowalski"];
+        Contact *c2 = [[Contact alloc] initWithContactName: @"Paweł Skaslki"];
         
-        _contacts = [NSMutableArray arrayWithArray:contactArray];
+        _contacts = [NSMutableArray arrayWithArray: @[c1, c2]];
     }
     return self;
 }
@@ -49,9 +49,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    NSString *contact = self.contacts[indexPath.row];
+    Contact *contact = self.contacts[indexPath.row];
     
-    cell.textLabel.text = contact;
+    cell.textLabel.text = contact.name;
     
     return cell;
 }
