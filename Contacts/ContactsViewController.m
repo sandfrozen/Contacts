@@ -21,10 +21,8 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        Contact *c1 = [[Contact alloc] initWithContactName: @"Jan Kowalski"];
-        Contact *c2 = [[Contact alloc] initWithContactName: @"Paweł Skaslki"];
-        
-        _contacts = [NSMutableArray arrayWithArray: @[c1, c2]];
+        Contact *c1 = [[Contact alloc] initWithContactName:@"Ala Kotka"];
+        _contacts = [NSMutableArray arrayWithArray:@[c1]];
     }
     return self;
 }
@@ -56,5 +54,23 @@
     return cell;
 }
 
+- (IBAction)cancelToContactsViewController:(UIStoryboardSegue *)segue
+{
+    // cancel
+}
+
+- (IBAction)createNewContact:(UIStoryboardSegue *)segue
+{
+    NewContactViewController *newContactVC = segue.sourceViewController;
+    NSString *name = newContactVC.nameTextField.text;
+    NSString *surname = newContactVC.surnameTextField.text;
+    if (name.length > 0 || surname.length >0) {
+        NSString *contactName = [NSString stringWithFormat:@"%@ %@", name, surname];
+        Contact *newContact = [[Contact alloc] initWithContactName:contactName];
+        
+        [self.contacts addObject:newContact];
+        [self.tableView reloadData];
+    }
+}
 
 @end
