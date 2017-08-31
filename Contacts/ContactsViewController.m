@@ -7,6 +7,7 @@
 //
 
 #import "ContactsViewController.h"
+#import "Contacts-Swift.h"
 
 @interface ContactsViewController ()
 
